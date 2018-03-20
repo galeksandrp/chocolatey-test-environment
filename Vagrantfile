@@ -29,7 +29,7 @@ Vagrant.configure("2") do |config|
     v.customize ["modifyvm", :id, "--vram", 32]
     # For better DNS resolution
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
-    # No audo
+    # No audio
     v.customize ["modifyvm", :id, "--audio", "none"]
     # Clipboard enabled
     v.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
